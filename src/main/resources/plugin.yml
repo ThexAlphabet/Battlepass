@@ -1,0 +1,14 @@
+name: PrivateBattlepass
+main: dev.xalphabet.privatebattlepass.PrivateBattlepass
+version: 1.0
+api-version: 1.16
+commands:
+  battlepass:
+    description: Open the battlepass GUI
+    usage: /battlepass [page]
+  addreward:
+    description: Add a reward to the battlepass
+    usage: /addreward <page> <rewardName> <material> <slot> <displayName> <lore> <leftClickCommand> <rightClickCommand>
+  reloadbattlepass:
+    description: Reload the battlepass configuration
+    usage: /reloadbattlepass
