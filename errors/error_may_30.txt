@@ -1,0 +1,19 @@
+[01:48:08] [Server thread/INFO]: [PrivateBattlepass] Enabling PrivateBattlepass v1.0
+[01:48:08] [Server thread/ERROR]: Error occurred while enabling PrivateBattlepass v1.0 (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "java.util.Map.entrySet()" because "requirements" is null
+	at dev.xalphabet.privatebattlepass.BattlepassSystem.addReward(BattlepassSystem.java:98) ~[PrivateBattlepass-1.0-SNAPSHOT.jar:?]
+	at dev.xalphabet.privatebattlepass.PrivateBattlepass.addExampleReward(PrivateBattlepass.java:72) ~[PrivateBattlepass-1.0-SNAPSHOT.jar:?]
+	at dev.xalphabet.privatebattlepass.PrivateBattlepass.initializeComponents(PrivateBattlepass.java:49) ~[PrivateBattlepass-1.0-SNAPSHOT.jar:?]
+	at dev.xalphabet.privatebattlepass.PrivateBattlepass.onEnable(PrivateBattlepass.java:23) ~[PrivateBattlepass-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:287) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:188) ~[paper-1.20.4.jar:git-Paper-477]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.20.4.jar:git-Paper-477]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugin(CraftServer.java:639) ~[paper-1.20.4.jar:git-Paper-477]
+	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.enablePlugins(CraftServer.java:550) ~[paper-1.20.4.jar:git-Paper-477]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:671) ~[paper-1.20.4.jar:git-Paper-477]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:431) ~[paper-1.20.4.jar:git-Paper-477]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:309) ~[paper-1.20.4.jar:git-Paper-477]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-477]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-477]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
